@@ -9,6 +9,9 @@ class UploadFilesService {
     return http.post("/upload", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
+        'Access-Control-Allow-Credentials':true,
+        "Access-Control-Allow-Origin": "*",
+        'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
       },
       onUploadProgress,
     });
