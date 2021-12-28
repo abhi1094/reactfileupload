@@ -121,6 +121,16 @@ export default class UploadFiles extends Component {
               ))}
           </ul>
         </div>
+        <div className="form">
+          <form>
+          <div class="form-group">
+              <label for="exampleInputEmail1">Serch Files</label>
+              <input type="search" class="form-control" id="searchfiles" aria-describedby="emailHelp" placeholder="Search"></input>
+          </div>
+          </form>
+          
+        </div>
+        
       </div>
     );
   }
